@@ -1,0 +1,8 @@
+# ide
+.vscode
+
+# log
+*.log
+
+# app
+app

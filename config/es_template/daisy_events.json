@@ -1,0 +1,42 @@
+{
+    "template": "daisy-events-*",
+    "version": 1,
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 1,
+        "refresh_interval": "90s"
+    },
+    "mappings": {
+        "attacker_events": {
+            "properties": {
+                "@timestamp": {
+                    "type": "date"
+                },
+                "@version": {
+                    "type": "keyword"
+                },
+                "title": {
+                    "type": "keyword"
+                },
+                "date": {
+                    "type": "date"
+                },
+                "country": {
+                    "type": "keyword"
+                },
+                "province": {
+                    "type": "keyword"
+                },
+                "city": {
+                    "type": "keyword"
+                },
+                "geo": {
+                    "type": "geo_point"
+                },
+                "description": {
+                    "type": "text"
+                }
+            }
+        }
+    }
+}

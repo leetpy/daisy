@@ -1,0 +1,5 @@
+runmode: debug
+addr: :5000
+es:
+  uri: http://127.0.0.1:9200
+  events_index_prefix: daisy_events
